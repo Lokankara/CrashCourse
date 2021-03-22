@@ -8,5 +8,5 @@ RUN apt-get update -y && \
     && apt-get install systemd -y 
 VOLUME /opt/app
 EXPOSE 223
-CMD ["bash run.sh"]
+CMD ["/bin/bash", "run.sh"]
 ENTRYPOINT ["sshpass -p '*,<R#!$(2udw{Zgz' sftp testuser@207.244.229.74:/opt/testuser/logfile.log"]
