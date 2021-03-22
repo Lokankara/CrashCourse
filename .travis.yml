@@ -1,4 +1,8 @@
-language: node_js
-node_js:
-  - "stable"
-script: gulp travis
+dist: bionic
+addons:
+  apt:
+    sources:
+      - ppa:chris-lea/redis-server
+    packages:
+    - redis-tools
+    - redis-server
